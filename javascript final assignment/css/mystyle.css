@@ -1,0 +1,20 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+#forms{
+    width: 50%;
+    float:center;
+    border:4px;
+}
+body{
+    float:centre;
+    border-radius:25px;
+    border-color: rgb(28, 15, 212);
+    border-width: 2px;
+}
+#fathername{
+    border: brown;
+}

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script type=" text/javascript "src="script/forms.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <center>
+        <h3>Submit your application form</h3>
+        <p>for.NetDeveloper fresher</p>
+
+    </center>
+    <body>
+        <form action="" id="forms" onsubmit="return validation()">
+                <h1>Personal Information</h1>
+                <label for="fathername" class="right">Name as per Id proof*</label>
+                <label for="" id="fathername" style="visibility: hidden;color: red;">Please fill the field</label>
+                <label for="name" class="left">Father Name*</label>
+                <label for="" id="username" style="visibility: hidden;color: red;" required> Please fill the field</label><br><br>
+                <input type="text" id="fname" size="30" class="right">
+                <input type="text" id="name" size="30" class="left"><br><br>
+
+                <label for="email" class="left">Email*</label><br>
+                <input type="text" id="email" size="30" class="left">
+                <label for="" id="er" style="visibility: hidden;color: red;">Invalid Email</label>
+
+                <label for=""class="right">Date of Birth*</label>
+                <input type="date" class="right" id="dob"placeholder="DD/MM/YYY" size="5">
+                <label for=""class="right">Mobile NO</label>
+                <input type="number" class="right" maxlength="10" size="5" ><br><br>
+                
+                <label for="cAddress1" class="left">Current Address*</label><br><br>
+                <input type="text"  class="right" placeholder="Address Line 2" size="30" id="cAddress2">
+                <input type="text" id="cAddress1" size="30" class="left" class="left" placeholder="Address Line 1"><br><br>
+                <input type="text" class="right" placeholder="Zip Code" size="30">
+                <input type="text" id="city1" size="17" placeholder="City" class="left">
+                <select name="state1" id="state" class="left">
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="andhrapradesh">andhrapradesh</option>
+                </select><br><br>
+                 <label for="pAddress1" class="left" >Permanent Address*</label>  <br>
+                 <input type="text"  class="right" placeholder="Address Line 2" size="30" id="pAddress2">
+                <input type="text" id="pAddress1" class="left" size="30" placeholder="Address Line 1"><br><br>
+                <input type="text" class="right" placeholder="pin Code" size="30">
+                <input type="text" id="city1" size="17" placeholder="City" class="left">
+                <select name="state2" id="state2" class="left">
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="andhrapradesh">andhrapradesh</option>
+                    
+                </select>
+                <p class="left">Upload profile Photo *(JPJ/PNG format only)</p><br>
+                <p class="left">Please upload a photo of yourself.Your face should be clearly visible.Make sure the image size does not exceed 500kb</p>
+                 <br>
+                <input type="file" class="left" placeholder="Upload Photo">
+                <button onclick="next()">Next</button>
+        </form>
+    </body>
+</html>
